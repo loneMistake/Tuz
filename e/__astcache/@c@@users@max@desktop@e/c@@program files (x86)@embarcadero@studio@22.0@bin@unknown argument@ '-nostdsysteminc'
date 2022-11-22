@@ -1,0 +1,26 @@
+//---------------------------------------------------------------------------
+
+#include <vcl.h>
+#pragma hdrstop
+
+#include "Unit7.h"
+//---------------------------------------------------------------------------
+#pragma package(smart_init)
+#pragma resource "*.dfm"
+TForm7 *Form7;
+//---------------------------------------------------------------------------
+__fastcall TForm7::TForm7(TComponent* Owner)
+	: TForm(Owner)
+{
+}
+//---------------------------------------------------------------------------
+void __fastcall TForm7::FormActivate(TObject *Sender)
+{
+t->Columns[0]->size=64;
+t->Columns[1]->size=64;
+t->Columns[2]->size=64;
+t->Columns[3]->size=64;
+t->Columns[4]->size=64;
+
+}
+//---------------------------------------------------------------------------
